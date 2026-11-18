@@ -1,0 +1,6 @@
+{
+  "name": "LADA Vesta Pulse — Капсульная коллекция",
+  "description": "Дизайн-концепция и 10-слайдовая презентация кастомизации LADA Vesta NG Седан для конкурса «Инженеры транспорта»",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
