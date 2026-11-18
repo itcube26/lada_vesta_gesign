@@ -222,7 +222,7 @@ function drawCard(
   ctx.stroke();
 }
 
-function drawEnjoyProMockup(
+export function drawEnjoyProMockup(
   ctx: CanvasRenderingContext2D,
   x: number,
   y: number,
@@ -336,7 +336,7 @@ function drawEnjoyProMockup(
   ctx.fillText('КЛИМАТ · НАВИ · МЕДИА · АВТО', sx + 135, sy + 620);
 }
 
-function drawClusterMockup(
+export function drawClusterMockup(
   ctx: CanvasRenderingContext2D,
   x: number,
   y: number,

@@ -27,6 +27,9 @@ interface SlideDeckProps {
   onExportPdf: () => void;
   isExportingPdf: boolean;
   pdfProgress: { current: number; total: number } | null;
+  onExportPptx: () => void;
+  isExportingPptx: boolean;
+  pptxProgress: { current: number; total: number } | null;
 }
 
 export function SlideDeck({
@@ -35,6 +38,9 @@ export function SlideDeck({
   onExportPdf,
   isExportingPdf,
   pdfProgress,
+  onExportPptx,
+  isExportingPptx,
+  pptxProgress,
 }: SlideDeckProps) {
   const [activeSlide, setActiveSlide] = useState(1);
   const [showAuthorEditor, setShowAuthorEditor] = useState(false);
@@ -800,12 +806,23 @@ export function SlideDeck({
             type="button"
             disabled={isExportingPdf}
             onClick={onExportPdf}
-            className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg bg-[#111317] text-white hover:bg-[#232730] disabled:opacity-60 transition-colors cursor-pointer whitespace-nowrap shrink-0"
+            className="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg border border-[#E4E7EC] hover:bg-[#F3F5F8] disabled:opacity-50 transition-colors cursor-pointer whitespace-nowrap shrink-0"
           >
             <FileDown className="w-3.5 h-3.5" />
             {isExportingPdf && pdfProgress
-              ? `Сборка PDF (${pdfProgress.current}/${pdfProgress.total})...`
-              : 'Скачать PDF (10 слайдов)'}
+              ? `PDF (${pdfProgress.current}/${pdfProgress.total})...`
+              : 'Скачать PDF'}
+          </button>
+          <button
+            type="button"
+            disabled={isExportingPptx}
+            onClick={onExportPptx}
+            className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg bg-[#111317] text-white hover:bg-[#232730] disabled:opacity-60 transition-colors cursor-pointer whitespace-nowrap shrink-0"
+          >
+            <FileDown className="w-3.5 h-3.5" />
+            {isExportingPptx && pptxProgress
+              ? `Сборка PPTX (${pptxProgress.current}/${pptxProgress.total})...`
+              : 'Скачать PPTX (10 слайдов)'}
           </button>
         </div>
       </div>

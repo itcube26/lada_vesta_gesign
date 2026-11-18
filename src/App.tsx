@@ -5,6 +5,7 @@ import { CollectionOverview } from './components/CollectionOverview';
 import { PresentationAuthor, SlideDeck } from './components/SlideDeck';
 import { StlCatalog } from './components/StlCatalog';
 import { exportPresentationPdf } from './utils/pdfExporter';
+import { exportPresentationPptx } from './utils/pptxExporter';
 
 type AppTab = 'overview' | 'stl' | 'assets' | 'slides';
 
@@ -28,6 +29,8 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<AppTab>('overview');
   const [isExportingPdf, setIsExportingPdf] = useState(false);
   const [pdfProgress, setPdfProgress] = useState<{ current: number; total: number } | null>(null);
+  const [isExportingPptx, setIsExportingPptx] = useState(false);
+  const [pptxProgress, setPptxProgress] = useState<{ current: number; total: number } | null>(null);
   const [exportMessage, setExportMessage] = useState<string | null>(null);
   const [author, setAuthor] = useState<PresentationAuthor>(() => {
     try {
@@ -65,6 +68,25 @@ export default function App() {
     } finally {
       setIsExportingPdf(false);
       setPdfProgress(null);
+    }
+  };
+
+  const handleExportPptx = async () => {
+    if (isExportingPptx) return;
+    setIsExportingPptx(true);
+    setExportMessage(null);
+    try {
+      await exportPresentationPptx(author, (current, total) => {
+        setPptxProgress({ current, total });
+      });
+      setExportMessage('Презентация LADA_Vesta_Pulse_Presentation.pptx сохранена в загрузки.');
+      window.setTimeout(() => setExportMessage(null), 5000);
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Ошибка создания PPTX';
+      setExportMessage(msg);
+    } finally {
+      setIsExportingPptx(false);
+      setPptxProgress(null);
     }
   };
 
@@ -107,14 +129,14 @@ export default function App() {
           <div className="shrink-0">
             <button
               type="button"
-              disabled={isExportingPdf}
-              onClick={handleExportPdf}
+              disabled={isExportingPptx}
+              onClick={handleExportPptx}
               className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg bg-[#111317] text-white hover:bg-[#232730] disabled:opacity-60 transition-colors whitespace-nowrap shrink-0 cursor-pointer"
             >
               <FileDown className="w-3.5 h-3.5" />
-              {isExportingPdf && pdfProgress
-                ? `PDF ${pdfProgress.current}/${pdfProgress.total}...`
-                : 'Скачать PDF'}
+              {isExportingPptx && pptxProgress
+                ? `PPTX ${pptxProgress.current}/${pptxProgress.total}...`
+                : 'Скачать PPTX'}
             </button>
           </div>
         </div>
@@ -169,6 +191,9 @@ export default function App() {
             onExportPdf={handleExportPdf}
             isExportingPdf={isExportingPdf}
             pdfProgress={pdfProgress}
+            onExportPptx={handleExportPptx}
+            isExportingPptx={isExportingPptx}
+            pptxProgress={pptxProgress}
           />
         )}
       </main>
