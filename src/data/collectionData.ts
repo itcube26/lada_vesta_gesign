@@ -7,6 +7,11 @@ import interiorCabinImg from '../assets/images/vesta_interior_cabin_179499230743
 import cmfMaterialsImg from '../assets/images/vesta_cmf_materials_1794992307230.jpg';
 import printedPartsImg from '../assets/images/vesta_3d_printed_parts_1794993194860.jpg';
 import stickerSheetsImg from '../assets/images/vesta_sticker_sheets_1794993193792.jpg';
+import spoilerPreviewImg from '../../STL/vesta_pulse_trunk_spoiler.png';
+import badgePreviewImg from '../../STL/vesta_pulse_x_badge.png';
+import wheelCapPreviewImg from '../../STL/vesta_pulse_wheel_cap_60mm.png';
+import mirrorBladePreviewImg from '../../STL/vesta_pulse_mirror_blade.png';
+import phoneHolderPreviewImg from '../../STL/vesta_pulse_phone_holder.png';
 
 export interface ColorToken {
   code: string;
@@ -48,6 +53,8 @@ export interface PrintableStlPart {
   printTime: string;
   mount: string;
   description: string;
+  previewImage: string;
+  previewPath: string;
 }
 
 export interface StickerPack {
@@ -143,6 +150,8 @@ export const PRINTABLE_STL_PARTS: PrintableStlPart[] = [
     printTime: 'около 5.5 часов',
     mount: 'Крепкий двусторонний скотч 3M',
     description: 'Аккуратный спойлер по форме багажника Весты. Ничего сверлить не нужно — напечатал, зашкурил, приклеил на 3M-скотч.',
+    previewImage: spoilerPreviewImg,
+    previewPath: 'STL/vesta_pulse_trunk_spoiler.png',
   },
   {
     id: 'badge',
@@ -155,6 +164,8 @@ export const PRINTABLE_STL_PARTS: PrintableStlPart[] = [
     printTime: '45 минут',
     mount: 'На место значка / 3M-скотч',
     description: 'Значок в стиле ИКС-линий Лады. Во время печати на 3 миллиметре ставим паузу, меняем пластик на лаймовый и получаем двухцветный значок.',
+    previewImage: badgePreviewImg,
+    previewPath: 'STL/vesta_pulse_x_badge.png',
   },
   {
     id: 'wheel-cap',
@@ -167,6 +178,8 @@ export const PRINTABLE_STL_PARTS: PrintableStlPart[] = [
     printTime: '35 минут за 1 шт.',
     mount: 'Защёлкивается в центр диска',
     description: 'Простая крышечка в центр литого диска. Можно распечатать сразу 4 штуки и менять цвета хоть под каждую погоду.',
+    previewImage: wheelCapPreviewImg,
+    previewPath: 'STL/vesta_pulse_wheel_cap_60mm.png',
   },
   {
     id: 'mirror-trim',
@@ -179,6 +192,8 @@ export const PRINTABLE_STL_PARTS: PrintableStlPart[] = [
     printTime: '1 час 10 минут',
     mount: 'Клеится сверху на зеркало',
     description: 'Маленькая накладка на зеркало, которая защищает его от царапин и делает вид сбоку более спортивным.',
+    previewImage: mirrorBladePreviewImg,
+    previewPath: 'STL/vesta_pulse_mirror_blade.png',
   },
   {
     id: 'phone-dock',
@@ -191,6 +206,8 @@ export const PRINTABLE_STL_PARTS: PrintableStlPart[] = [
     printTime: '1 час 50 минут',
     mount: 'Ставится в нишу без клея',
     description: 'Удобная подставка под смартфон на панель Весты. Снизу сделал прорезь, чтобы можно было спокойно подключить зарядку.',
+    previewImage: phoneHolderPreviewImg,
+    previewPath: 'STL/vesta_pulse_phone_holder.png',
   },
 ];
 

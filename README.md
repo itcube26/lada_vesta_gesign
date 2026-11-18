@@ -31,16 +31,16 @@
 
 | Превью | Название | Как крепится | Файл |
 |---|---|---|---|
-| <img src="src/assets/images/vesta_trunk_spoiler_view_1794993193690.jpg" width="180" alt="Спойлер на багажник"/> | **Спойлер на багажник** | На скотч 3M (без сверления) | [⬇ Скачать STL](<STL/vesta_pulse_trunk_spoiler.stl>) |
-| <img src="src/assets/images/vesta_exterior_details_1794992306204.jpg" width="180" alt="Заглушка на диск"/> | **Заглушка на диск (60 мм)** | Защёлкивается в центр диска | [⬇ Скачать STL](<STL/vesta_pulse_wheel_cap_60mm.stl>) |
-| <img src="src/assets/images/vesta_exterior_details_1794992306204.jpg" width="180" alt="Плавник на зеркало"/> | **Накладка-плавник на зеркало** | Клеится сверху на зеркало | [⬇ Скачать STL](<STL/vesta_pulse_mirror_blade.stl>) |
+| <img src="STL/vesta_pulse_trunk_spoiler.png" width="180" alt="Спойлер на багажник"/> | **Спойлер на багажник** | На скотч 3M (без сверления) | [⬇ Скачать STL](<STL/vesta_pulse_trunk_spoiler.stl>) |
+| <img src="STL/vesta_pulse_wheel_cap_60mm.png" width="180" alt="Заглушка на диск"/> | **Заглушка на диск (60 мм)** | Защёлкивается в центр диска | [⬇ Скачать STL](<STL/vesta_pulse_wheel_cap_60mm.stl>) |
+| <img src="STL/vesta_pulse_mirror_blade.png" width="180" alt="Плавник на зеркало"/> | **Накладка-плавник на зеркало** | Клеится сверху на зеркало | [⬇ Скачать STL](<STL/vesta_pulse_mirror_blade.stl>) |
 
 ### Значки и в салон
 
 | Превью | Название | Как крепится | Файл |
 |---|---|---|---|
-| <img src="src/assets/images/vesta_3d_printed_parts_1794993194860.jpg" width="180" alt="Объёмный ИКС-шильдик"/> | **Объёмный ИКС-шильдик** | Двухцветная печать / 3M | [⬇ Скачать STL](<STL/vesta_pulse_x_badge.stl>) |
-| <img src="src/assets/images/vesta_3d_printed_parts_1794993194860.jpg" width="180" alt="Подставка для телефона"/> | **Подставка для телефона в салон** | Ставится в нишу без клея | [⬇ Скачать STL](<STL/vesta_pulse_phone_holder.stl>) |
+| <img src="STL/vesta_pulse_x_badge.png" width="180" alt="Объёмный ИКС-шильдик"/> | **Объёмный ИКС-шильдик** | Двухцветная печать / 3M | [⬇ Скачать STL](<STL/vesta_pulse_x_badge.stl>) |
+| <img src="STL/vesta_pulse_phone_holder.png" width="180" alt="Подставка для телефона"/> | **Подставка для телефона в салон** | Ставится в нишу без клея | [⬇ Скачать STL](<STL/vesta_pulse_phone_holder.stl>) |
 
 ---
 
@@ -80,12 +80,17 @@ npm run dev
 lada-vesta-pulse/
 ├── .github/workflows/
 │   └── deploy.yml                # Автопубликация на GitHub Pages
-├── STL/
+├── STL/                          # .STL модели и их превью .png
 │   ├── vesta_pulse_trunk_spoiler.stl
+│   ├── vesta_pulse_trunk_spoiler.png
 │   ├── vesta_pulse_x_badge.stl
+│   ├── vesta_pulse_x_badge.png
 │   ├── vesta_pulse_wheel_cap_60mm.stl
+│   ├── vesta_pulse_wheel_cap_60mm.png
 │   ├── vesta_pulse_mirror_blade.stl
-│   └── vesta_pulse_phone_holder.stl
+│   ├── vesta_pulse_mirror_blade.png
+│   ├── vesta_pulse_phone_holder.stl
+│   └── vesta_pulse_phone_holder.png
 ├── src/
 │   ├── assets/images/            # Картинки и рендеры
 │   ├── components/               # Страницы сайта и 10 слайдов
