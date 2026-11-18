@@ -30,7 +30,7 @@ export function CollectionOverview({
 
   return (
     <div className="space-y-16">
-      {/* Hero Section: Smart Auto style clarity + LADA Vesta NG */}
+      {/* Hero Section */}
       <section className="space-y-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           <div className="lg:col-span-5 flex flex-col justify-between bg-white border border-[#E4E7EC] rounded-2xl p-8">
@@ -40,11 +40,11 @@ export function CollectionOverview({
                 <span aria-hidden="true">·</span>
                 <span>LADA Vesta NG Седан</span>
               </div>
-              <h1 className="mt-4 text-[clamp(2rem,3.3vw,3rem)] font-extrabold tracking-tight leading-[1.08] text-[#111317] [text-wrap:balance]">
-                LADA Vesta Pulse: 3D-печать и кастомные наклейки
+              <h1 className="mt-4 text-[clamp(2rem,3.3vw,2.9rem)] font-extrabold tracking-tight leading-[1.08] text-[#111317] [text-wrap:balance]">
+                LADA Vesta Pulse: 3D-печать и наклейки своими руками
               </h1>
               <p className="mt-4 text-sm lg:text-base text-[#555B66] leading-relaxed">
-                Практичная коллекция кастомизации для нового поколения: детали (спойлер, шильдики, колпачки дисков, держатель телефона) можно бесплатно скачать с официального сайта в формате .STL и напечатать на 3D-принтере, а кузов оформить готовыми наборами виниловых наклеек.
+                Я сделал набор тюнинга для Лады Весты, который каждый может собрать сам. Заходишь на этот сайт, скачиваешь 3D-модельки (спойлер, шильдик, заглушки на диски, подставку под телефон) — печатаешь на 3D-принтере и клеишь готовые виниловые наклейки.
               </p>
             </div>
 
@@ -70,7 +70,7 @@ export function CollectionOverview({
                 onClick={onOpenSlides}
                 className="inline-flex items-center gap-1.5 px-3 py-2.5 text-xs font-semibold text-[#1D4ED8] hover:underline cursor-pointer whitespace-nowrap shrink-0"
               >
-                10 слайдов PDF
+                Слайды презентации
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
@@ -79,50 +79,50 @@ export function CollectionOverview({
           <div className="lg:col-span-7 rounded-2xl overflow-hidden border border-[#E4E7EC] bg-[#ECEDF0] min-h-[320px]">
             <ResilientImage
               src={GENERATED_ASSETS.exteriorThreeQuarter}
-              alt="LADA Vesta NG Седан с наклейками и 3D-деталями VESTA PULSE"
+              alt="LADA Vesta NG Седан с наклейками и 3D-деталями"
               className="w-full h-full object-cover"
             />
           </div>
         </div>
 
-        {/* 4-Column Quick Summary Strip */}
+        {/* 4-Column Summary */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="bg-white border border-[#E4E7EC] rounded-xl p-5">
-            <div className="text-xs text-[#555B66]">Основа проекта</div>
-            <div className="mt-1 text-base font-bold text-[#111317]">3D-печать + наклейки</div>
-            <div className="mt-1 text-xs text-[#555B66]">Модельки на официальном сайте</div>
+            <div className="text-xs text-[#555B66]">Главная идея</div>
+            <div className="mt-1 text-base font-bold text-[#111317]">3D-принтер + наклейки</div>
+            <div className="mt-1 text-xs text-[#555B66]">Всё можно скачать с сайта</div>
           </div>
           <div className="bg-white border border-[#E4E7EC] rounded-xl p-5">
-            <div className="text-xs text-[#555B66]">Готовые 3D-файлы</div>
+            <div className="text-xs text-[#555B66]">Модели для печати</div>
             <div className="mt-1 text-base font-bold font-mono-tabular text-[#111317]">
-              5 моделей .STL
+              5 файлов .STL
             </div>
-            <div className="mt-1 text-xs text-[#555B66]">Спойлер, шильдик, диски, салон</div>
+            <div className="mt-1 text-xs text-[#555B66]">Печать из пластика PETG</div>
           </div>
           <div className="bg-white border border-[#E4E7EC] rounded-xl p-5">
-            <div className="text-xs text-[#555B66]">Адаптация наклеек</div>
+            <div className="text-xs text-[#555B66]">Цвета машины</div>
             <div className="mt-1 text-base font-bold font-mono-tabular text-[#111317]">
               3 цвета кузова
             </div>
-            <div className="mt-1 text-xs text-[#555B66]">Белый, Тайфун, Кобальт</div>
+            <div className="mt-1 text-xs text-[#555B66]">Белый, серый и синий</div>
           </div>
           <div className="bg-white border border-[#E4E7EC] rounded-xl p-5">
-            <div className="text-xs text-[#555B66]">Цифровая среда</div>
+            <div className="text-xs text-[#555B66]">Экран в салоне</div>
             <div className="mt-1 text-base font-bold text-[#111317]">LADA EnjoY Pro</div>
-            <div className="mt-1 text-xs text-[#555B66]">Тема экрана и приборки</div>
+            <div className="mt-1 text-xs text-[#555B66]">Своя тема и приборка</div>
           </div>
         </div>
       </section>
 
-      {/* Section 01: 3D-печать и ракурс сзади со спойлером */}
+      {/* Section 01: 3D-печать */}
       <section className="space-y-5">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">
-              01. 3D-печать деталей для LADA Vesta NG
+              01. Детали на 3D-принтере
             </p>
             <h2 className="mt-1 text-2xl font-bold tracking-tight">
-              Скачай .STL с сайта — распечатай и поставь без сверления
+              Скачал .STL с сайта — напечатал и приклеил без сверления
             </h2>
           </div>
           <button
@@ -130,7 +130,7 @@ export function CollectionOverview({
             onClick={onOpenStl}
             className="text-xs font-semibold text-[#1D4ED8] hover:underline cursor-pointer whitespace-nowrap"
           >
-            Перейти в каталог .STL →
+            Открыть все .STL модели →
           </button>
         </div>
 
@@ -139,14 +139,14 @@ export function CollectionOverview({
             <div className="aspect-video bg-[#ECEDF0]">
               <ResilientImage
                 src={GENERATED_ASSETS.printedParts}
-                alt="3D-печатные детали: лип-спойлер, шильдик, держатель смартфона и заглушки"
+                alt="3D-печатные детали: спойлер, шильдик, подставка под телефон и заглушки"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-5">
-              <h3 className="text-base font-bold">Детали из PETG / ASA пластика</h3>
+              <h3 className="text-base font-bold">Вот так детали выглядят после печати</h3>
               <p className="mt-1 text-xs text-[#555B66] leading-relaxed">
-                Лип-спойлер багажника, объёмный ИКС-шильдик, заглушки ступиц и держатель смартфона на торпедо. Крепятся на клипсы и скотч 3M.
+                Спойлер на багажник, объёмный значок X, заглушки на колёса и подставка под телефон. Печатаем из PETG, потому что обычный PLA летом на жаре может погнуться.
               </p>
             </div>
           </div>
@@ -155,29 +155,29 @@ export function CollectionOverview({
             <div className="aspect-video bg-[#ECEDF0]">
               <ResilientImage
                 src={GENERATED_ASSETS.trunkSpoilerView}
-                alt="Вид сзади 3/4 LADA Vesta NG со спойлером и наклейками"
+                alt="Вид сзади LADA Vesta NG со спойлером и наклейками"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-5">
-              <h3 className="text-base font-bold">Вид сзади: 3D-спойлер и боковые стикеры</h3>
+              <h3 className="text-base font-bold">Как спойлер и наклейки смотрятся сзади</h3>
               <p className="mt-1 text-xs text-[#555B66] leading-relaxed">
-                Спойлер подчёркивает крышку багажника седана, а графитовые наклейки с лаймовой кромкой поддерживают геометрию задних фонарей.
+                Спойлер крепится на крепкий скотч 3M, поэтому багажник не нужно сверлить — при желании его можно снять.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 02: Кастомные наклейки + 3 цвета кузова */}
+      {/* Section 02: Наклейки + 3 цвета */}
       <section className="space-y-5">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">
-              02. Кастомные наклейки и 3 цвета кузова
+              02. Кастомные наклейки
             </p>
             <h2 className="mt-1 text-2xl font-bold tracking-tight">
-              Готовые листы стикеров и адаптация под любой цвет Vesta
+              Стикеры на кузов и проверка на 3 разных цветах Весты
             </h2>
           </div>
           <div className="flex items-center gap-1 p-1 bg-[#EAECEF] rounded-lg">
@@ -203,7 +203,7 @@ export function CollectionOverview({
             <div className="aspect-video bg-[#ECEDF0]">
               <ResilientImage
                 src={GENERATED_ASSETS.stickerSheets}
-                alt="Листы виниловых наклеек для LADA Vesta NG: ИКС-полосы, Акула и полосы на диски"
+                alt="Листы виниловых наклеек: полосы, Акула и ленты на диски"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -222,7 +222,7 @@ export function CollectionOverview({
               <div className="aspect-video bg-[#ECEDF0]">
                 <ResilientImage
                   src={GENERATED_ASSETS.colorVariants}
-                  alt="Наклейки на белом, сером и синем кузове LADA Vesta NG"
+                  alt="Наклейки на белой, серой и синей LADA Vesta NG"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -239,18 +239,18 @@ export function CollectionOverview({
         </div>
       </section>
 
-      {/* Section 03: Интерьер, CMF и EnjoY Pro */}
+      {/* Section 03: Салон, материалы и экран */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         <div className="lg:col-span-6 bg-white border border-[#E4E7EC] rounded-2xl overflow-hidden flex flex-col">
           <div className="aspect-video bg-[#181A1F]">
             <ResilientImage
               src={GENERATED_ASSETS.interiorCabin}
-              alt="Интерьер LADA Vesta NG: чехлы, прострочка, держатель и экран EnjoY Pro"
+              alt="Салон LADA Vesta NG с чехлами и экраном"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="p-6 space-y-4 flex-1">
-            <h3 className="text-lg font-bold">03. Салон и материалы CMF</h3>
+            <h3 className="text-lg font-bold">03. Салон и материалы (CMF)</h3>
             <div className="space-y-2.5">
               {CMF_MATERIALS.slice(0, 4).map((m) => (
                 <div key={m.id} className="flex items-center gap-3 text-xs">
@@ -271,8 +271,8 @@ export function CollectionOverview({
         <div className="lg:col-span-6 bg-white border border-[#E4E7EC] rounded-2xl p-6 flex flex-col justify-between gap-5">
           <div className="flex items-center justify-between gap-3">
             <div>
-              <h3 className="text-lg font-bold">04. Тема LADA EnjoY Pro и приборка</h3>
-              <p className="text-xs text-[#555B66]">Единый стиль с наклейками и 3D-акцентами</p>
+              <h3 className="text-lg font-bold">04. Своя тема для LADA EnjoY Pro</h3>
+              <p className="text-xs text-[#555B66]">В тех же цветах, что и наклейки снаружи</p>
             </div>
             <div className="flex items-center gap-1 p-1 bg-[#F1F3F6] rounded-lg">
               {[

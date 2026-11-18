@@ -9,9 +9,9 @@ import { exportPresentationPdf } from './utils/pdfExporter';
 type AppTab = 'overview' | 'stl' | 'assets' | 'slides';
 
 const DEFAULT_AUTHOR: PresentationAuthor = {
-  fio: 'Иванов Алексей Дмитриевич',
-  school: 'ИТ-Куб / Лицей № 19',
-  team: 'Команда «Vesta Makers»',
+  fio: 'Иванов Алексей (8 «А» класс)',
+  school: 'Школа № 19 / ИТ-Куб',
+  team: 'Команда «Vesta 3D»',
   city: 'Тольятти',
 };
 

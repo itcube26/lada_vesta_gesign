@@ -77,13 +77,13 @@ export function SlideDeck({
                   LADA VESTA PULSE
                 </h2>
                 <p className="mt-4 text-base lg:text-lg text-[#D1D5DB] leading-relaxed">
-                  3D-печать и кастомные наклейки для LADA Vesta NG Седан с официальным сайтом моделей
+                  Мой проект тюнинга LADA Vesta NG Седан: 3D-печать деталей и наклейки с официального сайта
                 </p>
               </div>
 
               <div className="border-t border-white/15 pt-6 space-y-2 text-sm">
                 <div className="flex justify-between gap-4">
-                  <span className="text-[#9CA3AF]">Модель</span>
+                  <span className="text-[#9CA3AF]">Машина</span>
                   <span className="font-semibold text-white">LADA Vesta NG Седан</span>
                 </div>
                 <div className="flex justify-between gap-4">
@@ -91,7 +91,7 @@ export function SlideDeck({
                   <span className="font-semibold text-white text-right">{author.fio}</span>
                 </div>
                 <div className="flex justify-between gap-4">
-                  <span className="text-[#9CA3AF]">Команда / Организация</span>
+                  <span className="text-[#9CA3AF]">Команда / Школа</span>
                   <span className="font-medium text-[#D1D5DB] text-right">
                     {author.team} · {author.school}
                   </span>
@@ -122,14 +122,14 @@ export function SlideDeck({
             <div className="flex items-baseline justify-between border-b border-[#E4E7EC] pb-4">
               <div>
                 <p className="text-xs font-mono-tabular text-[#555B66]">
-                  Слайд 02 / 10 · Мудборд и главная идея проекта
+                  Слайд 02 / 10 · Мудборд и главная идея
                 </p>
                 <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight">
-                  Концепция: 3D-печать + кастомные наклейки с сайта
+                  Моя идея: 3D-принтер + наклейки с сайта
                 </h2>
               </div>
               <span className="text-xs font-medium text-[#1D4ED8]">
-                Целевая аудитория: 18–28 лет
+                Для молодых водителей
               </span>
             </div>
 
@@ -140,28 +140,28 @@ export function SlideDeck({
                     <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">01. 3D-печать (.STL)</p>
                     <p className="mt-2 text-sm font-semibold">Детали своими руками</p>
                     <p className="mt-1 text-xs text-[#555B66] leading-relaxed">
-                      Спойлер, ИКС-шильдик, заглушки дисков и держатель смартфона можно скачать с сайта и напечатать из PETG/ASA.
+                      Спойлер, шильдик, заглушки дисков и подставку под телефон можно скачать с сайта и напечатать из PETG.
                     </p>
                   </div>
                   <div className="border border-[#E4E7EC] rounded-xl p-4 bg-[#F8F9FB]">
                     <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">02. Наклейки</p>
-                    <p className="mt-2 text-sm font-semibold">Стикерпаки и ИКС-линии</p>
+                    <p className="mt-2 text-sm font-semibold">Полосы и акулы</p>
                     <p className="mt-1 text-xs text-[#555B66] leading-relaxed">
-                      Готовые векторные листы виниловых полос, стикеров «Акула» и лент на диски под плоттерную резку.
+                      Готовые листы виниловых полос под ИКС-форму дверей, стикеры «Акула» и полоски на диски.
                     </p>
                   </div>
                   <div className="border border-[#E4E7EC] rounded-xl p-4 bg-[#F8F9FB]">
-                    <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">03. Официальный сайт</p>
-                    <p className="mt-2 text-sm font-semibold">Открытая библиотека</p>
+                    <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">03. Наш сайт</p>
+                    <p className="mt-2 text-sm font-semibold">Бесплатные модели</p>
                     <p className="mt-1 text-xs text-[#555B66] leading-relaxed">
-                      Владелец сам выбирает набор на сайте, скачивает .STL и наклейки бесплатно или заказывает печать у дилера.
+                      Владелец заходит на сайт, скачивает нужные .STL и макеты наклеек — и ничего не нужно пилить или перекрашивать.
                     </p>
                   </div>
                 </div>
 
                 <div className="border border-[#E4E7EC] rounded-xl p-4 bg-[#F8F9FB]">
                   <p className="text-xs font-semibold text-[#555B66] mb-3">
-                    Цветовая палитра (филамент и виниловая плёнка)
+                    Какие цвета я выбрал (для пластика и наклеек)
                   </p>
                   <div className="grid grid-cols-4 gap-3">
                     {COLLECTION_PALETTE.map((token) => (
@@ -199,7 +199,7 @@ export function SlideDeck({
             </div>
 
             <div className="flex items-center justify-between border-t border-[#E4E7EC] pt-3 text-xs text-[#555B66]">
-              <span>Доступный конструктор: 3D-принтер + виниловые наклейки без перекраски</span>
+              <span>Просто, недорого и можно собрать дома или в школьном кружке</span>
               <span className="font-mono-tabular">LADA Vesta NG Седан · VESTA PULSE</span>
             </div>
           </div>
@@ -214,10 +214,10 @@ export function SlideDeck({
                   Слайд 03 / 10 · Экстерьер автомобиля
                 </p>
                 <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight">
-                  Общий вид 3/4 спереди и сзади: наклейки и 3D-спойлер
+                  Как машина выглядит снаружи: наклейки и 3D-спойлер
                 </h2>
               </div>
-              <span className="text-xs font-mono-tabular text-[#555B66]">Экстерьер</span>
+              <span className="text-xs font-mono-tabular text-[#555B66]">Спереди и сзади</span>
             </div>
 
             <div className="grid grid-cols-12 gap-5 my-auto py-3 items-stretch">
@@ -239,17 +239,17 @@ export function SlideDeck({
                 </div>
                 <div className="border border-[#E4E7EC] rounded-xl p-4 bg-[#F8F9FB]">
                   <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">
-                    Что изменено снаружи
+                    Что я добавил снаружи
                   </p>
                   <p className="mt-1 text-xs text-[#555B66] leading-relaxed">
-                    Наклейки точно повторяют боковые ИКС-выштамповки кузова, а 3D-печатный лип-спойлер и накладки зеркал крепятся на 3M-скотч без сверления.
+                    Полосы наклеены ровно по ИКС-линиям на дверях Весты, а сзади стоит напечатанный на 3D-принтере спойлер. Всё держится на 3M-скотче — кузов сверлить не надо.
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="flex items-center justify-between border-t border-[#E4E7EC] pt-3 text-xs text-[#555B66]">
-              <span>Сохранение заводской гарантии и кузова — все детали съёмные</span>
+              <span>Машина сохраняет гарантию — все детали и плёнку можно снять</span>
               <span className="font-mono-tabular">Ракурсы 3/4 спереди и сзади</span>
             </div>
           </div>
@@ -261,10 +261,10 @@ export function SlideDeck({
             <div className="flex items-baseline justify-between border-b border-[#E4E7EC] pb-4">
               <div>
                 <p className="text-xs font-mono-tabular text-[#555B66]">
-                  Слайд 04 / 10 · Детали экстерьера и 3D-печать (.STL)
+                  Слайд 04 / 10 · Детали и 3D-печать (.STL)
                 </p>
                 <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight">
-                  Печатные детали: спойлер, шильдик, заглушки дисков и зеркала
+                  Мои 3D-детали: спойлер, шильдик, заглушки и зеркала
                 </h2>
               </div>
               <span className="text-xs font-mono-tabular text-[#555B66]">Файлы .STL на сайте</span>
@@ -308,7 +308,7 @@ export function SlideDeck({
             </div>
 
             <div className="flex items-center justify-between border-t border-[#E4E7EC] pt-3 text-xs text-[#555B66]">
-              <span>Каждая 3D-модель доступна для скачивания в .STL на сайте коллекции</span>
+              <span>Все эти модельки можно скачать в .STL прямо на нашем сайте</span>
               <span className="font-mono-tabular">STL-01 · STL-02 · STL-03 · STL-04</span>
             </div>
           </div>
@@ -320,10 +320,10 @@ export function SlideDeck({
             <div className="flex items-baseline justify-between border-b border-[#E4E7EC] pb-4">
               <div>
                 <p className="text-xs font-mono-tabular text-[#555B66]">
-                  Слайд 05 / 10 · Адаптивность наклеек
+                  Слайд 05 / 10 · Проверка на 3 цветах
                 </p>
                 <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight">
-                  Читаемость наклеек на трёх контрастных цветах кузова
+                  Как наклейки смотрятся на белой, серой и синей Весте
                 </h2>
               </div>
               <div className="no-print flex items-center gap-1 p-1 bg-[#F1F3F6] rounded-lg">
@@ -376,19 +376,19 @@ export function SlideDeck({
 
               <div className="col-span-5 flex flex-col justify-between border border-[#E4E7EC] rounded-xl p-3 bg-[#F8F9FB]">
                 <div className="flex items-center justify-between text-xs px-1">
-                  <span className="font-semibold">Схема раскроя наклеек</span>
+                  <span className="font-semibold">Схема куда клеить</span>
                   <span className="font-mono-tabular text-[#1D4ED8]">{activeVariant.name}</span>
                 </div>
                 <LiveryBlueprintSvg variant={activeVariant} className="w-full h-auto rounded-lg" />
                 <p className="text-[11px] text-[#555B66] px-1">
-                  Двухслойная виниловая наклейка (тёмный графит + яркий кант Вольт-Лайм) одинаково хорошо видна на светлом, сером и синем кузове.
+                  Наклейка двухцветная (тёмный графит + яркий лайм), поэтому она не сливается ни с белой, ни с серой, ни с синей краской.
                 </p>
               </div>
             </div>
 
             <div className="flex items-center justify-between border-t border-[#E4E7EC] pt-3 text-xs text-[#555B66]">
-              <span>Один макет плоттерной резки подходит на любой заводской цвет LADA Vesta NG</span>
-              <span className="font-mono-tabular">Контраст ≥ 4.5:1</span>
+              <span>Один макет на плоттере подходит сразу на любой цвет кузова</span>
+              <span className="font-mono-tabular">Белый · Серый · Синий</span>
             </div>
           </div>
         );
@@ -399,13 +399,13 @@ export function SlideDeck({
             <div className="flex items-baseline justify-between border-b border-[#E4E7EC] pb-4">
               <div>
                 <p className="text-xs font-mono-tabular text-[#555B66]">
-                  Слайд 06 / 10 · Интерьер автомобиля
+                  Слайд 06 / 10 · Салон автомобиля
                 </p>
                 <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight">
-                  Салон: чехлы, прострочка и 3D-держатель смартфона
+                  Салон: чехлы, прострочка и 3D-подставка под телефон
                 </h2>
               </div>
-              <span className="text-xs font-mono-tabular text-[#555B66]">Интерьер NG</span>
+              <span className="text-xs font-mono-tabular text-[#555B66]">Интерьер</span>
             </div>
 
             <div className="grid grid-cols-12 gap-6 my-auto py-3 items-stretch">
@@ -419,32 +419,32 @@ export function SlideDeck({
 
               <div className="col-span-4 flex flex-col justify-between gap-3">
                 <div className="border border-[#E4E7EC] rounded-xl p-4 bg-[#F8F9FB]">
-                  <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">01. Сиденья и чехлы</p>
-                  <p className="mt-1 text-sm font-semibold">3D-сетка и ИКС-строчка</p>
+                  <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">01. Сиденья</p>
+                  <p className="mt-1 text-sm font-semibold">Тёмная сетка + лайм</p>
                   <p className="mt-1 text-xs text-[#555B66] leading-relaxed">
-                    Дышащая сетка по центру и перфорированная микрозамша по бокам с контрастной нитью Вольт-Лайм.
+                    По центру дышащая сетка, чтобы летом было не жарко, а по краям мягкая эко-замша с яркой ниткой.
                   </p>
                 </div>
                 <div className="border border-[#E4E7EC] rounded-xl p-4 bg-[#F8F9FB]">
-                  <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">02. 3D-аксессуар (STL-05)</p>
-                  <p className="mt-1 text-sm font-semibold">Держатель смартфона на панель</p>
+                  <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">02. Подставка (STL-05)</p>
+                  <p className="mt-1 text-sm font-semibold">Печатается на 3D-принтере</p>
                   <p className="mt-1 text-xs text-[#555B66] leading-relaxed">
-                    Печатается на 3D-принтере из матового PETG, защёлкивается в штатную нишу панели без клея и имеет вырез под провод.
+                    Ставится на панель без клея, держит смартфон в дороге и имеет вырез снизу под кабель зарядки.
                   </p>
                 </div>
                 <div className="border border-[#E4E7EC] rounded-xl p-4 bg-[#F8F9FB]">
-                  <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">03. Дверные карты и руль</p>
-                  <p className="mt-1 text-sm font-semibold">Поддержка общей стилистики</p>
+                  <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">03. Двери и руль</p>
+                  <p className="mt-1 text-sm font-semibold">В одном стиле с кузовом</p>
                   <p className="mt-1 text-xs text-[#555B66] leading-relaxed">
-                    ИКС-узор на вставках дверей, оплётка руля и окантовка ковриков повторяют цвет наклеек на кузове.
+                    Прострочка на дверях, руле и ковриках повторяет цвет наклеек на кузове.
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="flex items-center justify-between border-t border-[#E4E7EC] pt-3 text-xs text-[#555B66]">
-              <span>Матовые материалы без бликов на лобовом стекле</span>
-              <span className="font-mono-tabular">EnjoY Pro 10.4" · STL-05</span>
+              <span>Салон тёмный, не пачкается и не бликует на солнце</span>
+              <span className="font-mono-tabular">EnjoY Pro · STL-05</span>
             </div>
           </div>
         );
@@ -458,7 +458,7 @@ export function SlideDeck({
                   Слайд 07 / 10 · Карта материалов CMF
                 </p>
                 <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight">
-                  Материалы для 3D-печати, винила и отделки салона
+                  Из чего всё сделано: пластик PETG, плёнка и ткани
                 </h2>
               </div>
               <span className="text-xs font-mono-tabular text-[#555B66]">5 материалов</span>
@@ -492,7 +492,7 @@ export function SlideDeck({
                       </div>
                     </div>
                     <div className="col-span-4 text-xs text-[#111317]">
-                      <span className="font-semibold">Зона: </span>
+                      <span className="font-semibold">Где: </span>
                       <span className="text-[#555B66]">{mat.zones}</span>
                     </div>
                     <div className="col-span-4 text-[11px] text-[#555B66] leading-snug">
@@ -504,8 +504,8 @@ export function SlideDeck({
             </div>
 
             <div className="flex items-center justify-between border-t border-[#E4E7EC] pt-3 text-xs text-[#555B66]">
-              <span>PETG/ASA выдерживает солнце и мойку, винил снимается без следов</span>
-              <span className="font-mono-tabular">PETG · Винил · Эко-текстиль</span>
+              <span>PETG не боится жары, а плёнка не слезает на автомойке</span>
+              <span className="font-mono-tabular">PETG · Винил · Ткань</span>
             </div>
           </div>
         );
@@ -519,7 +519,7 @@ export function SlideDeck({
                   Слайд 08 / 10 · Digital-кастомизация
                 </p>
                 <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight">
-                  Цифровая среда: LADA EnjoY Pro и приборная панель
+                  Своя тема для экрана LADA EnjoY Pro и приборки
                 </h2>
               </div>
               <div className="no-print flex items-center gap-1 p-1 bg-[#F1F3F6] rounded-lg">
@@ -551,7 +551,7 @@ export function SlideDeck({
                   className="w-full max-h-[340px] h-auto drop-shadow-sm"
                 />
                 <p className="mt-2 text-xs font-semibold">
-                  LADA EnjoY Pro (10.4&quot;) · Главный экран
+                  Экран LADA EnjoY Pro (10.4&quot;)
                 </p>
               </div>
 
@@ -562,21 +562,21 @@ export function SlideDeck({
                 />
                 <div className="grid grid-cols-3 gap-3">
                   <div className="border border-[#E4E7EC] rounded-xl p-3 bg-[#F8F9FB]">
-                    <p className="text-xs font-bold">Шкалы ИКС-арка</p>
+                    <p className="text-xs font-bold">Шкалы в виде ИКС</p>
                     <p className="mt-1 text-[11px] text-[#555B66]">
-                      Дуги спидометра и тахометра повторяют угол боковых наклеек и выштамповок Vesta NG.
+                      Дуги спидометра и оборотов сделаны под тем же углом, что и наклейки на дверях.
                     </p>
                   </div>
                   <div className="border border-[#E4E7EC] rounded-xl p-3 bg-[#F8F9FB]">
-                    <p className="text-xs font-bold">Связь с 3D-деталями</p>
+                    <p className="text-xs font-bold">Под цвет деталей</p>
                     <p className="mt-1 text-[11px] text-[#555B66]">
-                      Цвет акцентов на экране совпадает с цветом напечатанных вставок и виниловой плёнки.
+                      Яркие лаймовые и синие элементы на экране совпадают с цветом 3D-вставок.
                     </p>
                   </div>
                   <div className="border border-[#E4E7EC] rounded-xl p-3 bg-[#F8F9FB]">
-                    <p className="text-xs font-bold">Тема с сайта</p>
+                    <p className="text-xs font-bold">Удобные кнопки</p>
                     <p className="mt-1 text-[11px] text-[#555B66]">
-                      Пакет обоев и иконок скачивается вместе с .STL-моделями в одном архиве коллекции.
+                      На главном экране сразу видны карта, музыка, телефон и климат — ничего лишнего.
                     </p>
                   </div>
                 </div>
@@ -584,8 +584,8 @@ export function SlideDeck({
             </div>
 
             <div className="flex items-center justify-between border-t border-[#E4E7EC] pt-3 text-xs text-[#555B66]">
-              <span>Единый стиль экстерьера, 3D-аксессуаров, наклеек и экранов</span>
-              <span className="font-mono-tabular">UI-тема: VESTA PULSE</span>
+              <span>Машина и внутри, и снаружи выглядит как один проект</span>
+              <span className="font-mono-tabular">Тема VESTA PULSE</span>
             </div>
           </div>
         );
@@ -596,13 +596,13 @@ export function SlideDeck({
             <div className="flex items-baseline justify-between border-b border-[#E4E7EC] pb-4">
               <div>
                 <p className="text-xs font-mono-tabular text-[#555B66]">
-                  Слайд 09 / 10 · Пользовательский сценарий
+                  Слайд 09 / 10 · Как этим пользоваться
                 </p>
                 <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight">
-                  Как владелец кастомизирует машину через официальный сайт
+                  Как обычный владелец собирает этот тюнинг с сайта
                 </h2>
               </div>
-              <span className="text-xs font-mono-tabular text-[#555B66]">4 простых шага</span>
+              <span className="text-xs font-mono-tabular text-[#555B66]">4 шага</span>
             </div>
 
             <div className="grid grid-cols-4 gap-4 my-auto py-4">
@@ -633,10 +633,10 @@ export function SlideDeck({
             <div className="border border-[#E4E7EC] rounded-xl p-4 bg-[#111317] text-white flex items-center justify-between gap-6">
               <div>
                 <p className="text-xs font-mono-tabular text-[#C8F135]">
-                  Почему это удобно для молодёжи
+                  Почему это удобно
                 </p>
                 <p className="mt-1 text-sm font-medium">
-                  Не нужно покупать дорогой заводской обвес — все модельки и лекала наклеек лежат в открытом доступе на сайте коллекции.
+                  Не нужно покупать дорогой пластиковый обвес в магазине — все модельки и макеты наклеек лежат на сайте бесплатно.
                 </p>
               </div>
               <span className="text-xs font-mono-tabular text-[#9CA3AF] whitespace-nowrap shrink-0">
@@ -652,13 +652,13 @@ export function SlideDeck({
             <div className="flex items-baseline justify-between border-b border-white/15 pb-4">
               <div>
                 <p className="text-xs font-mono-tabular text-[#C8F135]">
-                  Слайд 10 / 10 · Презентационный лист продукта
+                  Слайд 10 / 10 · Итоги проекта
                 </p>
                 <h2 className="mt-1 text-2xl lg:text-3xl font-extrabold tracking-tight">
-                  LADA VESTA PULSE — сайт 3D-моделей и наклеек для Vesta NG
+                  LADA VESTA PULSE — 3D-печать и наклейки для каждого
                 </h2>
               </div>
-              <span className="text-xs font-mono-tabular text-[#9CA3AF]">Итог проекта</span>
+              <span className="text-xs font-mono-tabular text-[#9CA3AF]">Итог</span>
             </div>
 
             <div className="grid grid-cols-12 gap-6 my-auto py-3 items-stretch">
@@ -697,33 +697,33 @@ export function SlideDeck({
 
               <div className="col-span-5 flex flex-col justify-between gap-3">
                 <div className="border border-white/15 rounded-xl p-4 bg-white/5">
-                  <p className="text-xs font-mono-tabular text-[#C8F135]">Что входит в коллекцию</p>
+                  <p className="text-xs font-mono-tabular text-[#C8F135]">Что я сделал</p>
                   <ul className="mt-2.5 space-y-1.5 text-xs text-[#E5E7EB]">
-                    <li>· 5 готовых 3D-моделей (.STL): спойлер, шильдик, колпачки, плавник зеркала, держатель телефона</li>
-                    <li>· Наборы виниловых наклеек («ИКС-Контур», «Акула», ленты на диски)</li>
-                    <li>· Адаптация графики на 3 цветах: Белый, Тайфун, Кобальт</li>
-                    <li>· Салон из 3D-трикотажа и скин для LADA EnjoY Pro</li>
+                    <li>· 5 3D-моделей (.STL): спойлер, шильдик, колпачки, плавник зеркала, подставка</li>
+                    <li>· Наборы виниловых наклеек («ИКС-Контур», «Акула», полосы на диски)</li>
+                    <li>· Проверку на 3 цветах Весты: Белый, Серый, Синий</li>
+                    <li>· Салон из сетки и тему для экрана LADA EnjoY Pro</li>
                   </ul>
                 </div>
 
                 <div className="border border-white/15 rounded-xl p-4 bg-white/5">
-                  <p className="text-xs font-mono-tabular text-[#C8F135]">Плюсы для АВТОВАЗ и владельцев</p>
+                  <p className="text-xs font-mono-tabular text-[#C8F135]">Почему это работает</p>
                   <div className="mt-2.5 grid grid-cols-2 gap-3 text-xs">
                     <div>
-                      <div className="font-bold text-white">Просто внедрить</div>
-                      <div className="text-[#9CA3AF]">Модели скачиваются с официального сайта</div>
+                      <div className="font-bold text-white">Всё на сайте</div>
+                      <div className="text-[#9CA3AF]">Модели можно скачать бесплатно</div>
                     </div>
                     <div>
-                      <div className="font-bold text-white">Низкая цена</div>
-                      <div className="text-[#9CA3AF]">3D-печать из PETG и плоттерная резка</div>
+                      <div className="font-bold text-white">Дёшево сделать</div>
+                      <div className="text-[#9CA3AF]">Нужен только 3D-принтер и плёнка</div>
                     </div>
                   </div>
                 </div>
 
                 <div className="border border-[#C8F135]/40 rounded-xl p-4 bg-[#C8F135]/10">
-                  <div className="text-xs font-semibold text-[#C8F135]">Готовность материалов</div>
+                  <div className="text-xs font-semibold text-[#C8F135]">Результат</div>
                   <div className="mt-1 text-sm font-bold text-white">
-                    На сайте доступны для скачивания .STL файлы деталей, .SVG макеты наклеек и эта презентация.
+                    Сайт работает: .STL детали, наклейки и презентацию можно скачать прямо сейчас.
                   </div>
                 </div>
               </div>
@@ -822,7 +822,7 @@ export function SlideDeck({
             />
           </label>
           <label className="block space-y-1.5">
-            <span className="text-xs font-semibold text-[#555B66]">Образовательная организация</span>
+            <span className="text-xs font-semibold text-[#555B66]">Школа / кружок</span>
             <input
               type="text"
               value={author.school}
@@ -831,7 +831,7 @@ export function SlideDeck({
             />
           </label>
           <label className="block space-y-1.5">
-            <span className="text-xs font-semibold text-[#555B66]">Название команды</span>
+            <span className="text-xs font-semibold text-[#555B66]">Команда</span>
             <input
               type="text"
               value={author.team}

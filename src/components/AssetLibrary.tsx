@@ -98,10 +98,10 @@ export function AssetLibrary() {
             Картинки для слайда «Мои предложения» и макеты под плоттер
           </p>
           <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight [text-wrap:balance]">
-            Кастомные наклейки, фото и макеты EnjoY Pro
+            Наклейки, картинки и экран EnjoY Pro
           </h2>
           <p className="mt-2 text-sm text-[#555B66] max-w-2xl">
-            Скачивайте готовые картинки для презентации (.JPG), векторные схемы наклеек для плоттерной резки (.SVG / .PNG) и экраны LADA EnjoY Pro.
+            Здесь можно скачать готовые картинки (.JPG) для презентации, схемы наклеек для плоттера (.SVG / .PNG) и тему для экрана LADA EnjoY Pro.
           </p>
         </div>
         {exportStatus && (

@@ -18,37 +18,37 @@ export function StlCatalog() {
       <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[#E4E7EC] pb-6">
         <div>
           <p className="text-xs font-mono-tabular text-[#1D4ED8] font-semibold">
-            Официальная библиотека моделей · LADA Vesta NG Седан
+            Мои 3D-модели · LADA Vesta NG Седан
           </p>
           <h2 className="mt-1 text-2xl lg:text-3xl font-bold tracking-tight [text-wrap:balance]">
-            3D-модели и файлы для 3D-печати (.STL)
+            Детали для 3D-принтера (.STL)
           </h2>
           <p className="mt-2 text-sm text-[#555B66] max-w-2xl">
-            Любой владелец Vesta NG может скачать готовые .STL-файлы с сайта и распечатать детали дома, в школьном технопарке или у дилера из термостойкого пластика PETG / ASA.
+            Любую деталь отсюда можно скачать в формате .STL и распечатать на обычном 3D-принтере (в школе, в кружке или дома). Лучше всего брать пластик PETG, чтобы детали не расплавились на летнем солнце.
           </p>
         </div>
 
         {downloadedFile && (
           <div className="text-xs font-semibold text-[#111317] bg-[#C8F135] px-4 py-2 rounded-lg">
-            Файл {downloadedFile} скачан
+            Файл {downloadedFile} скачан!
           </div>
         )}
       </div>
 
-      {/* Visual Showcase: 3D-Printed Parts & Installed Rear Spoiler */}
+      {/* Visual Showcase */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white border border-[#E4E7EC] rounded-2xl overflow-hidden">
           <div className="aspect-video bg-[#ECEDF0]">
             <ResilientImage
               src={GENERATED_ASSETS.printedParts}
-              alt="Готовые 3D-печатные детали для LADA Vesta NG: спойлер, шильдик, держатель и колпачки"
+              alt="Готовые 3D-печатные детали для LADA Vesta NG"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="p-5">
-            <h3 className="text-base font-bold">Комплект деталей после печати (PETG / ASA)</h3>
+            <h3 className="text-base font-bold">Напечатанные детали на коврике</h3>
             <p className="mt-1 text-xs text-[#555B66]">
-              Лип-спойлер крышки багажника, объёмный ИКС-шильдик, держатель смартфона в салон и 4 заглушки ступиц.
+              Спойлер на багажник, значок X, подставка под телефон и 4 заглушки на колёса.
             </p>
           </div>
         </div>
@@ -57,14 +57,14 @@ export function StlCatalog() {
           <div className="aspect-video bg-[#ECEDF0]">
             <ResilientImage
               src={GENERATED_ASSETS.trunkSpoilerView}
-              alt="LADA Vesta NG Седан с установленным 3D-печатным спойлером и наклейками"
+              alt="LADA Vesta NG Седан с установленным 3D-печатным спойлером"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="p-5">
-            <h3 className="text-base font-bold">Пример установки на LADA Vesta NG Седан</h3>
+            <h3 className="text-base font-bold">Как спойлер сидит на багажнике</h3>
             <p className="mt-1 text-xs text-[#555B66]">
-              Компактный спойлер крепится на скотч 3M без сверления крышки багажника и сочетается с боковыми наклейками.
+              Он лёгкий и крепится на двусторонний скотч 3M, ничего сверлить не надо.
             </p>
           </div>
         </div>
@@ -101,21 +101,21 @@ export function StlCatalog() {
 
               <div className="pt-3 border-t border-[#F1F3F6] space-y-1.5 text-xs">
                 <div className="flex justify-between gap-2">
-                  <span className="text-[#555B66]">Материал</span>
+                  <span className="text-[#555B66]">Пластик</span>
                   <span className="font-medium text-[#111317] text-right">{part.filament}</span>
                 </div>
                 <div className="flex justify-between gap-2">
-                  <span className="text-[#555B66]">Габариты</span>
+                  <span className="text-[#555B66]">Размер</span>
                   <span className="font-mono-tabular text-[#111317] text-right">{part.sizeMm}</span>
                 </div>
                 <div className="flex justify-between gap-2">
-                  <span className="text-[#555B66]">Печать</span>
+                  <span className="text-[#555B66]">Настройки</span>
                   <span className="font-mono-tabular text-[#111317] text-right">
                     {part.infill} · {part.printTime}
                   </span>
                 </div>
                 <div className="flex justify-between gap-2">
-                  <span className="text-[#555B66]">Крепление</span>
+                  <span className="text-[#555B66]">Как крепить</span>
                   <span className="font-medium text-[#111317] text-right">{part.mount}</span>
                 </div>
               </div>
